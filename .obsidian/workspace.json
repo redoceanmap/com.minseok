@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "254a13937e2794c7",
+        "id": "a7001616f6e09b16",
         "type": "tabs",
         "children": [
           {
-            "id": "b27d6c36b7996e3c",
+            "id": "186c7a46708da88f",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,32 +176,36 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "b27d6c36b7996e3c",
+  "active": "186c7a46708da88f",
   "lastOpenFiles": [
-    "CLAUDE.md.tmp.8212.f81873212b56",
-    "vault/www/react_rules.md",
+    "minseok/apps/titanic/_docs/titanic-erd.md",
     "vault/minseok/scaffold-rules.md",
+    "minseok/apps/titanic/adapter/outbound/strategies/__init__.py",
+    "minseok/apps/titanic/adapter/outbound/strategies",
     "minseok/apps/titanic/_docs/CLAUDE.md",
+    "vault/minseok/CLAUDE.md",
+    "vault/minseok/entitiy-rules.md",
+    "minseok/apps/titanic/app/ports/input/passenger_rose_model_use_case.py.tmp.43332.6d41613021bb",
+    "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/WHEEL",
+    "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/top_level.txt",
+    "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/namespace_packages.txt",
+    "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/REQUESTED",
+    "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/RECORD",
+    "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/LICENSE",
+    "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/METADATA",
+    "venv/lib/python3.13/site-packages/sklearn/externals/array_api_extra/README.md",
+    "venv/lib/python3.13/site-packages/sklearn/externals/array_api_compat/README.md",
+    "venv/lib/python3.13/site-packages/pyparsing/ai/best_practices.md",
+    "venv/lib/python3.13/site-packages/uvicorn-0.47.0.dist-info/licenses/LICENSE.md",
+    "vault/www/react_rules.md",
     "minseok/CLAUDE.md",
     "minseok/apps/sherlock_homes/_docs/CLAUDE.md",
     "minseok/apps/titanic/_docs/titanic-algorithm.md",
     "minseok/apps/titanic/_docs/titanic-algorithms.md",
-    "minseok/apps/titanic/_docs/CLAUDE.md.tmp.8212.3e11eb3d57b2",
-    "vault/minseok/CLAUDE.md.tmp.8212.4b35f0a30dc0",
     "AGENTS.md",
-    "vault/minseok/CLAUDE.md",
-    "vault/minseok/entitiy-rules.md",
     "vault/www/CLAUDE.md",
     "README.md",
     "CLAUDE.md",
-    "venv/lib/python3.13/site-packages/pytest_asyncio/__pycache__/plugin.cpython-313-pytest-8.4.0.pyc",
-    "venv/lib/python3.13/site-packages/pytest_asyncio/__pycache__/_version.cpython-313-pytest-8.4.0.pyc",
-    "venv/lib/python3.13/site-packages/pytest_asyncio/__pycache__/__init__.cpython-313-pytest-8.4.0.pyc",
-    "pytest.ini",
-    "venv/lib/python3.13/site-packages/pytest_asyncio-0.24.0.dist-info/top_level.txt",
-    "venv/lib/python3.13/site-packages/pytest_asyncio-0.24.0.dist-info/entry_points.txt",
-    "venv/lib/python3.13/site-packages/pytest_asyncio-0.24.0.dist-info/WHEEL",
-    "venv/lib/python3.13/site-packages/pytest_asyncio-0.24.0.dist-info/REQUESTED",
     "www/_claude/CLAUDE.md",
     "minseok/_claude/CLAUDE.md",
     "www/_claude/REACT_RULES.md",
@@ -209,10 +213,6 @@
     "minseok/apps/titanic/_docs/TITANIC_ERD.md",
     "www/node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions/proxy.md",
     "2026-06-12.md",
-    "vault/color-graph.md",
-    "vault/옵시디언.md",
-    "vault/Backend/clean_architecture.md",
-    "vault/DevOps/Backend/ENTITY_RULES.md",
-    "vault/Frontend/REACT_RULES.md"
+    "vault/color-graph.md"
   ]
 }
