@@ -179,12 +179,12 @@
   "active": "186c7a46708da88f",
   "lastOpenFiles": [
     "minseok/apps/titanic/_docs/titanic-erd.md",
-    "vault/minseok/scaffold-rules.md",
+    "minseok/_docs/scaffold-rules.md",
     "minseok/apps/titanic/adapter/outbound/strategies/__init__.py",
     "minseok/apps/titanic/adapter/outbound/strategies",
     "minseok/apps/titanic/_docs/CLAUDE.md",
-    "vault/minseok/CLAUDE.md",
-    "vault/minseok/entitiy-rules.md",
+    "minseok/_docs/CLAUDE.md",
+    "minseok/_docs/entitiy-rules.md",
     "minseok/apps/titanic/app/ports/input/passenger_rose_model_use_case.py.tmp.43332.6d41613021bb",
     "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/WHEEL",
     "venv/lib/python3.13/site-packages/google_generativeai-0.8.6.dist-info/top_level.txt",
@@ -197,13 +197,13 @@
     "venv/lib/python3.13/site-packages/sklearn/externals/array_api_compat/README.md",
     "venv/lib/python3.13/site-packages/pyparsing/ai/best_practices.md",
     "venv/lib/python3.13/site-packages/uvicorn-0.47.0.dist-info/licenses/LICENSE.md",
-    "vault/www/react_rules.md",
+    "www/_docs/react_rules.md",
     "minseok/CLAUDE.md",
     "minseok/apps/sherlock_homes/_docs/CLAUDE.md",
     "minseok/apps/titanic/_docs/titanic-algorithm.md",
     "minseok/apps/titanic/_docs/titanic-algorithms.md",
     "AGENTS.md",
-    "vault/www/CLAUDE.md",
+    "www/_docs/CLAUDE.md",
     "README.md",
     "CLAUDE.md",
     "www/_claude/CLAUDE.md",
@@ -212,7 +212,6 @@
     "docs/app/api-reference/file-conventions/route.md",
     "minseok/apps/titanic/_docs/TITANIC_ERD.md",
     "www/node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions/proxy.md",
-    "2026-06-12.md",
-    "vault/color-graph.md"
+    "2026-06-12.md"
   ]
 }

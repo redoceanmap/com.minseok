@@ -18,7 +18,6 @@
 
 - **`minseok/`** — Python / FastAPI 백엔드
 - **`www/`** — Next.js 프론트엔드
-- **`vault/`** — 설계·운영 문서 및 자동 적용 규칙
 
 ---
 
@@ -42,8 +41,8 @@
 
 | 영역 | 경로 |
 |------|------|
-| 백엔드 (Python / FastAPI) | [[vault/minseok/CLAUDE|minseok CLAUDE]] |
-| 프론트엔드 (Next.js) | [[vault/www/CLAUDE|www CLAUDE]] |
+| 백엔드 (Python / FastAPI) | [[minseok/_docs/CLAUDE|minseok CLAUDE]] |
+| 프론트엔드 (Next.js) | [[www/_docs/CLAUDE|www CLAUDE]] |
 | Titanic 앱 | [[minseok/apps/titanic/_docs/CLAUDE|Titanic CLAUDE]] |
 
 작업 디렉토리가 `minseok/` 또는 `www/` 하위라면 해당 CLAUDE.md를 우선 읽는다.

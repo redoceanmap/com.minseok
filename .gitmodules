@@ -4,6 +4,3 @@
 [submodule "frontend"]
 	path = www
 	url = https://github.com/redoceanmap/com.ragwatson.www.git
-[submodule "docs"]
-	path = vault
-	url = https://github.com/redoceanmap/com.ragwatson.docs.git
