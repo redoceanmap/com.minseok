@@ -34,6 +34,38 @@ services:
       - N8N_PORT=5678
       - WEBHOOK_URL=http://localhost:5678/
 
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: ["redis-server", "--appendonly", "yes"]
+
+  pgvector:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-raguser}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-please_change}
+      - POSTGRES_DB=${POSTGRES_DB:-ragdb}
+
+  neo4j:
+    image: neo4j:5
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+    environment:
+      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/please_change}
+
 volumes:
   n8n_data:
     name: n8n_data
+  redis_data:
+  pgvector_data:
+  neo4j_data:
