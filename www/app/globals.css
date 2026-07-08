@@ -1,0 +1,202 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/* class 기반 다크모드 (next-themes attribute="class") */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 한글 픽셀 폰트 — Galmuri11/14 */
+@font-face {
+  font-family: "Galmuri11";
+  src: url("https://cdn.jsdelivr.net/gh/quiple/galmuri/dist/Galmuri11.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Galmuri14";
+  src: url("https://cdn.jsdelivr.net/gh/quiple/galmuri/dist/Galmuri14.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #FAF7F2;
+  --surface: #FFFFFF;
+  --foreground: #1A1A1A;
+  --foreground-muted: #6B6B6B;
+  --border: #E8E2D9;
+  --brand: #722F37;
+  --brand-deep: #4A1D24;
+}
+
+.dark {
+  --background: #1A1614;
+  --surface: #242018;
+  --foreground: #F0EDE8;
+  --foreground-muted: #A8A29A;
+  --border: #3A332E;
+  --brand: #C9818A;
+  --brand-deep: #E0A4AB;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(180, 200, 255, 0.35);
+  color: #fff;
+}
+
+/* === Pixel Retro (ragwatson — titanic/login/signup 페이지) === */
+
+/* 밤하늘 별 배경 */
+.starfield {
+  background-color: #050E22;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, #FFE873, transparent),
+    radial-gradient(2px 2px at 60px 70px, #F0EFE7, transparent),
+    radial-gradient(1px 1px at 110px 40px, #FFE873, transparent),
+    radial-gradient(2px 2px at 160px 110px, #F0EFE7, transparent),
+    radial-gradient(1px 1px at 200px 60px, #FFE873, transparent),
+    radial-gradient(2px 2px at 240px 130px, #F0EFE7, transparent),
+    radial-gradient(1px 1px at 280px 20px, #FFE873, transparent),
+    radial-gradient(2px 2px at 320px 90px, #F0EFE7, transparent),
+    radial-gradient(1px 1px at 40px 160px, #FFE873, transparent),
+    radial-gradient(2px 2px at 130px 200px, #F0EFE7, transparent),
+    radial-gradient(1px 1px at 220px 180px, #FFE873, transparent),
+    radial-gradient(2px 2px at 300px 220px, #F0EFE7, transparent),
+    linear-gradient(180deg, #050E22 0%, #0B1E3F 60%, #152D55 100%);
+  background-size: 360px 260px, 360px 260px, 360px 260px, 360px 260px, 360px 260px, 360px 260px, 360px 260px, 360px 260px, 360px 260px, 360px 260px, 360px 260px, 360px 260px, 100% 100%;
+}
+
+.ocean {
+  background-color: #0A2540;
+  background-image:
+    linear-gradient(180deg, transparent 0%, transparent 30%, #1B3A5C 30%, #1B3A5C 50%, transparent 50%),
+    linear-gradient(180deg, transparent 0%, transparent 60%, #2D5A8A 60%, #2D5A8A 80%, transparent 80%),
+    repeating-linear-gradient(90deg, transparent 0, transparent 14px, rgba(255,200,87,0.06) 14px, rgba(255,200,87,0.06) 16px);
+  background-size: 32px 32px, 32px 32px, 32px 32px;
+}
+
+.moonlight-water {
+  background:
+    radial-gradient(ellipse 200px 60px at 50% 0%, rgba(255,200,87,0.35), transparent 70%),
+    linear-gradient(180deg, #0A2540 0%, #050E22 100%);
+}
+
+.pixel-star {
+  width: 4px;
+  height: 4px;
+  background: #FFE873;
+  position: absolute;
+  box-shadow: 0 0 0 1px rgba(255, 232, 115, 0.4);
+}
+
+.porthole-light {
+  background: #FFC857;
+  box-shadow: 0 0 8px #FF8C42, 0 0 16px rgba(255, 200, 87, 0.4);
+}
+
+/* 타이타닉 항해 + 침몰 */
+@keyframes sail-and-sink {
+  0%   { transform: translateX(-130%) translateY(0) rotate(0); opacity: 0; }
+  6%   { transform: translateX(-100%) translateY(0) rotate(0); opacity: 1; }
+  55%  { transform: translateX(calc(66vw - 50%)) translateY(0) rotate(0); opacity: 1; }
+  62%  { transform: translateX(calc(66vw - 50%)) translateY(2px) rotate(2deg); opacity: 1; }
+  70%  { transform: translateX(calc(66vw - 50%)) translateY(6px) rotate(6deg); opacity: 1; }
+  78%  { transform: translateX(calc(66vw - 50%)) translateY(18px) rotate(15deg); opacity: 1; }
+  85%  { transform: translateX(calc(66vw - 50%)) translateY(45px) rotate(28deg); opacity: 1; }
+  90%  { transform: translateX(calc(66vw - 50%)) translateY(95px) rotate(40deg); opacity: 0.7; }
+  95%  { transform: translateX(calc(66vw - 50%)) translateY(180px) rotate(50deg); opacity: 0; }
+  100% { transform: translateX(-130%) translateY(0) rotate(0); opacity: 0; }
+}
+
+@keyframes iceberg-shake {
+  0%, 55%, 61%, 100% { transform: translateX(0); }
+  56% { transform: translateX(-3px) translateY(-2px); }
+  57% { transform: translateX(4px) translateY(1px); }
+  58% { transform: translateX(-2px) translateY(-1px); }
+  59% { transform: translateX(3px); }
+  60% { transform: translateX(-1px); }
+}
+
+@keyframes explosion {
+  0%, 55%, 60%, 100% { opacity: 0; transform: scale(0) rotate(0deg); filter: brightness(1); }
+  56%                { opacity: 1; transform: scale(0.4) rotate(0deg); filter: brightness(1.8); }
+  57%                { opacity: 1; transform: scale(1.0) rotate(10deg); filter: brightness(1.6); }
+  58%                { opacity: 0.9; transform: scale(1.25) rotate(-5deg); filter: brightness(1.3); }
+  59%                { opacity: 0; transform: scale(1.4) rotate(0deg); filter: brightness(1); }
+}
+
+@keyframes explosion-aftershock {
+  0%, 56%, 62%, 100% { opacity: 0; transform: scale(0.4); }
+  57%                { opacity: 0.7; transform: scale(0.9); }
+  59%                { opacity: 0.4; transform: scale(1.3); }
+  61%                { opacity: 0; transform: scale(1.7); }
+}
+
+@keyframes ship-crack {
+  0%, 60% { opacity: 0; }
+  64%     { opacity: 0.5; }
+  72%     { opacity: 1; }
+  95%     { opacity: 1; }
+  100%    { opacity: 0; }
+}
+
+.animate-ship-crack {
+  animation: ship-crack 22s ease-in-out infinite;
+}
+
+/* 깜빡이는 커서 효과 */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.cursor-blink::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+  margin-left: 4px;
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .pixel-text {
+    font-family: var(--font-press-start), "Galmuri11", "Galmuri14", var(--font-noto), monospace;
+    letter-spacing: 0.05em;
+  }
+  .pixel-kr {
+    font-family: "Galmuri11", "Galmuri14", var(--font-noto), monospace;
+    letter-spacing: 0;
+  }
+  .text-shadow-pixel {
+    text-shadow: 4px 4px 0 #000;
+  }
+  .text-shadow-glow {
+    text-shadow: 0 0 8px rgba(255, 200, 87, 0.8), 2px 2px 0 #000;
+  }
+}
